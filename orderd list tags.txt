@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Ordered List</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+        }
+        ol{
+
+        }
+       div{
+           display: inline-block;
+       }
+        li{
+
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <h2>Simple Ordered List '1'</h2>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>JQuery</li>
+        <li>Bootstrap</li>
+        <li>Angular JS</li>
+    </ol>
+</div>
+<div>
+    <h2>Ordered List with Type 'a'</h2>
+    <ol type='a'>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>JQuery</li>
+        <li>Bootstrap</li>
+        <li>Angular JS</li>
+    </ol>
+</div>
+<div>
+    <h2>Ordered List with Type 'A'</h2>
+    <ol type="A">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>JQuery</li>
+        <li>Bootstrap</li>
+        <li>Angular JS</li>
+    </ol>
+</div>
+<div>
+
+    <h2>Ordered List with Type 'i'</h2>
+    <ol type="i">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>JQuery</li>
+        <li>Bootstrap</li>
+        <li>Angular JS</li>
+    </ol>
+</div>
+<div>
+    <h2>Ordered List with Type 'I'</h2>
+    <ol type="I">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>JQuery</li>
+        <li>Bootstrap</li>
+        <li>Angular JS</li>
+    </ol>
+</div>
+</body>
+</html>
