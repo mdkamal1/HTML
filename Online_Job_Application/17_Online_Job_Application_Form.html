@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Job Application Form</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS", sans-serif;
+            margin: 0;
+            background-image: url("../img/background.jpg");
+            background-size: cover;
+            color: white;
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            background-color: #362E23;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 0 15px red;
+        }
+        td{
+            padding: 7px;
+            font-size: 18px;
+        }
+        th{
+            text-align: left;
+        }
+        input[type='text'],
+        input[type='date'],
+        input[type='time'],
+        input[type='number'],
+        input[type='month']
+        {
+            height: 35px;
+            border: none;
+            border-radius: 15px;
+            font-size: 18px;
+        }
+        textarea{
+            border: none;
+            border-radius: 15px;
+        }
+        input[type='text']:focus,
+        input[type='date']:focus,
+        input[type='time']:focus,
+        input[type='number']:focus,
+        input[type='month']:focus,
+        textarea:focus
+        {
+            outline: none;
+            background-color: #b3a47d;
+        }
+        .button{
+            background-color: #362E23;
+            color: white;
+            border: none;
+            font-size: 18px;
+            padding: 14px 55px;
+            border-radius: 50px;
+        }
+        .button:hover{
+            background-color: #b3a47d;
+            cursor: pointer;
+            color: black;
+            box-shadow:  0 0 15px red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Online Job Application Form</h1>
+    <form>
+
+        <!-- Personal Information -->
+        <div id="personal-info">
+            <h2>Personal Information</h2>
+            <table width="100%">
+                <tr>
+                    <td>First Name</td>
+                    <td>
+                        <input type="text" size="25">
+                    </td>
+                    <td>Middle Name</td>
+                    <td>
+                        <input type="text" size="25">
+                    </td>
+                    <td>Last Name</td>
+                    <td>
+                        <input type="text" size="25">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Father's Name</td>
+                    <td>
+                        <input type="text" size="25">
+                    </td>
+                    <td>Mother's Name</td>
+                    <td>
+                        <input type="text" size="25">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Current Address</td>
+                    <td>
+                        <textarea rows="5" cols="25"></textarea>
+                    </td>
+                    <td>Permanent Address</td>
+                    <td>
+                        <textarea rows="5" cols="25"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phone Numbers</td>
+                </tr>
+                <tr>
+                    <td>Land Line</td>
+                    <td>
+                        <input type="text" size="25">
+                    </td>
+                    <td>Mobile Number</td>
+                    <td>
+                        <input type="number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date Of Birth</td>
+                    <td>
+                        <input type="date">
+                    </td>
+                    <td>Place Of Birth</td>
+                    <td>
+                        <input type="text" size="25">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Select Gender</td>
+                    <td>
+                        <input type="radio" name="gender" value="male">Male
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" value="female">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Highest Qualification</td>
+                    <td>
+                        <input type="text" size="25">
+                    </td>
+                    <td>Year Of Passing</td>
+                    <td>
+                        <input type="month">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Languages Known</td>
+                    <td>
+                        <input type="checkbox" value="telugu">Telugu
+                    </td>
+                    <td>
+                        <input type="checkbox" value="hindi">Hindi
+                    </td>
+                    <td>
+                        <input type="checkbox" value="english">English
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Select Your Hobbies</td>
+                    <td>
+                        <input type="checkbox" value="eating">Eating
+                    </td>
+                    <td>
+                        <input type="checkbox" value="coding">Coding
+                    </td>
+                    <td>
+                        <input type="checkbox" value="sleeping">Sleeping
+                    </td>
+                </tr>
+                <tr>
+                    <td>About Yourself</td>
+                    <td colspan="3">
+                        <textarea rows="5" cols="90"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nationality</td>
+                    <td>
+                        <select>
+                            <option>American</option>
+                            <option>Indian</option>
+                            <option>Others</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>AadharCard Number</td>
+                    <td>
+                        <input type="number">
+                    </td>
+                    <td>PAN CARD Number</td>
+                    <td>
+                        <input type="text" size="25">
+                    </td>
+                </tr>
+           </table>
+        </div>
+
+        <!-- Education Details -->
+        <div id="education-details">
+            <h2>Education Details</h2>
+            <table width="100%">
+                <tr>
+                    <th>SNO</th>
+                    <th>Qualification</th>
+                    <th>Institute / University</th>
+                    <th>Year Of Passing</th>
+                    <th>Marks (%)</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <input type="text" size="25">
+                    </td>
+                    <td>
+                        <input type="text" size="25">
+                    </td>
+                    <td>
+                        <input type="month">
+                    </td>
+                    <td>
+                        <input type="number" min="0" max="100">
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>
+                        <input type="text" size="25">
+                    </td>
+                    <td>
+                        <input type="text" size="25">
+                    </td>
+                    <td>
+                        <input type="month">
+                    </td>
+                    <td>
+                        <input type="number" min="0" max="100">
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>
+                        <input type="text" size="25">
+                    </td>
+                    <td>
+                        <input type="text" size="25">
+                    </td>
+                    <td>
+                        <input type="month">
+                    </td>
+                    <td>
+                        <input type="number" min="0" max="100">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Work Experience 1 -->
+        <div id="work-exp-1">
+            <h2>Work Experience 1</h2>
+            <table width="100%">
+                <tr>
+                    <th>SNO</th>
+                    <th>Company Address</th>
+                    <th>Work / Roles</th>
+                    <th>Duration(From)</th>
+                    <th>Duration (To)</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <textarea rows="5" cols="25"></textarea>
+                    </td>
+                    <td>
+                        <textarea rows="5" cols="25"></textarea>
+                    </td>
+                    <td>
+                        <input type="month">
+                    </td>
+                    <td>
+                        <input type="month">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Work Experience 2 -->
+        <div id="work-exp-2">
+            <h2>Work Experience 2</h2>
+            <table width="100%">
+                <tr>
+                    <th>SNO</th>
+                    <th>Company Address</th>
+                    <th>Work / Roles</th>
+                    <th>Duration(From)</th>
+                    <th>Duration (To)</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <textarea rows="5" cols="25"></textarea>
+                    </td>
+                    <td>
+                        <textarea rows="5" cols="25"></textarea>
+                    </td>
+                    <td>
+                        <input type="month">
+                    </td>
+                    <td>
+                        <input type="month">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Work Experience 3 -->
+        <div id="work-exp-3">
+            <h2>Work Experience 3</h2>
+            <table width="100%">
+                <tr>
+                    <th>SNO</th>
+                    <th>Company Address</th>
+                    <th>Work / Roles</th>
+                    <th>Duration(From)</th>
+                    <th>Duration (To)</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <textarea rows="5" cols="25"></textarea>
+                    </td>
+                    <td>
+                        <textarea rows="5" cols="25"></textarea>
+                    </td>
+                    <td>
+                        <input type="month">
+                    </td>
+                    <td>
+                        <input type="month">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Other Details -->
+        <div id="other-details">
+            <h2>Other Details</h2>
+            <table width="100%">
+                <tr>
+                    <td>Job Type</td>
+                    <td>
+                        <input type="radio" name="jobtype" value="permanent"> Permanent
+                    </td>
+                    <td>
+                        <input type="radio" name="jobtype" value="contract"> Contract
+                    </td>
+                    <td>
+                        <input type="radio" name="jobtype" value="other"> Other
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date Of Joining</td>
+                    <td>
+                        <input type="date">
+                    </td>
+                    <td>Time Of Joining</td>
+                    <td>
+                        <input type="time">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Preferred Job Location</td>
+                    <td>
+                        <input type="radio" name="joblocation" value="hyd">Hyderabad
+                    </td>
+                    <td>
+                        <input type="radio" name="joblocation" value="bang">Bangalore
+                    </td>
+                    <td>
+                        <input type="radio" name="joblocation" value="other">Other
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Willing to Relocate to Hyderabad ?</td>
+                    <td>
+                        <input type="radio" name="relocate" value="yes"> YES
+                    </td>
+                    <td>
+                        <input type="radio" name="relocate" value="no"> NO
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td colspan="3">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos dolore doloremque eum facilis fuga maiores modi optio quaerat repellendus, sit soluta velit vero voluptatem voluptates? Adipisci et natus tempore.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Submit" class="button">
+                    </td>
+                    <td>
+                        <input type="reset" value="Reset" class="button">
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+    </form>
+
+
+</body>
+</html>
